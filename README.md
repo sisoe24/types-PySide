@@ -1,3 +1,16 @@
+## Changes from origin PySide2-stubs
+
+Fork from [PySide2-stubs](https://pypi.org/project/PySide2-stubs/) and made the following changes:
+
+* Fixed `typing.Callable` to `typing.Callable[..., Any]`.
+* Introduced a post-fixing script to "manually" correct various issues.
+
+### Notes for installation
+
+The latest version of `mypy` you can use is `1.51.1`. Newer versions have different function signatures for `mypy.stubgen.generate_stub_for_c_module` and are missing
+`mypy.stubgenc.get_type_fullname` as a global function (which is now part of the `InspectionStubGenerator` class).
+
+---
 
 # Type stubs for PySide2 (and soon PySide6)
 
