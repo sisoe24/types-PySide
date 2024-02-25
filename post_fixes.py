@@ -4,7 +4,7 @@ import pathlib
 
 POST_GLOBAL_FIXES = [
     {
-        'pattern': r'typing\.Callable',
+        'pattern': r'typing\.Callable(?!\[)',
         'sub': 'typing.Callable[..., Any]'
     },
     {
