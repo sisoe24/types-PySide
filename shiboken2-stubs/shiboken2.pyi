@@ -1,6 +1,3 @@
-import typing
-T = typing.TypeVar('T')
-
 class VoidPtr:
     def __init__(self, *args, **kwargs) -> None: ...
     def toBytes(self, *args, **kwargs) -> typing.Any: ...
