@@ -7,6 +7,7 @@ POINT_RELEASE=5
 # pip install -U -e ../mypy
 
 python -m pyside_stubgen -p shiboken2 -p PySide2 -o ./.build
+python post_fixes.py
 
 echo -e "\nclass Object:\n    pass" >> ./.build/shiboken2/shiboken2.pyi
 echo -e "__version__: str" >> ./.build/PySide2/__init__.pyi
